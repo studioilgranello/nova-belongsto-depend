@@ -6,6 +6,7 @@ use \Illuminate\Http\Resources\MergeValue;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Collection;
 use Laravel\Nova\Http\Requests\NovaRequest;
+use Illuminate\Support\Facades\Log;
 use Laravel\Nova\Panel;
 use Granello\NovaBelongsToDepend\NovaBelongsToDepend;
 
@@ -30,6 +31,12 @@ class FieldController extends Controller
         if (empty($modelMap)) {
             return [];
         }
+
+        Log::debug('attributedField');
+        Log::debug($attributedField);
+
+        Log::debug('modelMap');
+        Log::debug($modelMap);
 
         $options = $this->getOptions($attributedField, $modelMap);
 
