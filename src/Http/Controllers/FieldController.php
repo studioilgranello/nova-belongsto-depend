@@ -1,13 +1,13 @@
 <?php
 
-namespace Orlyapps\NovaBelongsToDepend\Http\Controllers;
+namespace Granello\NovaBelongsToDepend\Http\Controllers;
 
 use \Illuminate\Http\Resources\MergeValue;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Collection;
 use Laravel\Nova\Http\Requests\NovaRequest;
 use Laravel\Nova\Panel;
-use Orlyapps\NovaBelongsToDepend\NovaBelongsToDepend;
+use Granello\NovaBelongsToDepend\NovaBelongsToDepend;
 
 class FieldController extends Controller
 {

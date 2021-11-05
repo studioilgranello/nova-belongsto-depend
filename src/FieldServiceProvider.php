@@ -1,6 +1,6 @@
 <?php
 
-namespace Orlyapps\NovaBelongsToDepend;
+namespace Granello\NovaBelongsToDepend;
 
 use Laravel\Nova\Nova;
 use Laravel\Nova\Events\ServingNova;

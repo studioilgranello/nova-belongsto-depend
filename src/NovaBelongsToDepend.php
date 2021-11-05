@@ -1,6 +1,6 @@
 <?php
 
-namespace Orlyapps\NovaBelongsToDepend;
+namespace Granello\NovaBelongsToDepend;
 
 use Illuminate\Support\Str;
 use Laravel\Nova\Actions\Action;
