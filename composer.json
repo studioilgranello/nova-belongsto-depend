@@ -1,5 +1,5 @@
 {
-    "name": "orlyapps/nova-belongsto-depend",
+    "name": "granello/nova-belongsto-depend",
     "description": "A Laravel Nova field.",
     "keywords": [
         "laravel",
@@ -11,13 +11,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Orlyapps\\NovaBelongsToDepend\\": "src/"
+            "Granello\\NovaBelongsToDepend\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Orlyapps\\NovaBelongsToDepend\\FieldServiceProvider"
+                "Granello\\NovaBelongsToDepend\\FieldServiceProvider"
             ]
         }
     },
