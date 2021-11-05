@@ -32,12 +32,6 @@ class FieldController extends Controller
             return [];
         }
 
-        Log::debug('attributedField');
-        Log::debug($attributedField);
-
-        Log::debug('modelMap');
-        Log::debug($modelMap);
-
         $options = $this->getOptions($attributedField, $modelMap);
 
         return $options instanceof Collection ? $options : [$options];
