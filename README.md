@@ -1,5 +1,9 @@
 # BelongsTo Field with Dependency
 
+## Cosa ho cambiato
+- introdotta modifica corretta https://github.com/orlyapps/nova-belongsto-depend/issues/96
+- aggiunto quarto parametro `$parentResource` per gestire i casi in cui la risorsa Nova non ha lo stesso nome del modello Laravel.
+
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/orlyapps/nova-belongsto-depend.svg?style=flat-square)](https://packagist.org/packages/Orlyapps/nova-belongsto-depend)
 [![Total Downloads](https://img.shields.io/packagist/dt/orlyapps/nova-belongsto-depend.svg?style=flat-square)](https://packagist.org/packages/Orlyapps/nova-belongsto-depend)
 

@@ -43,7 +43,7 @@ class NovaBelongsToDepend extends BelongsTo
      */
     public $component = 'nova-belongsto-depend';
 
-    public function __construct($name, $attribute = null, $resource = null)
+    public function __construct($name, $attribute = null, $resource = null, $parentResource = null)
     {
         $resource = $resource ?? ResourceRelationshipGuesser::guessResource($name);
         parent::__construct($name, $attribute, $resource);
@@ -54,6 +54,7 @@ class NovaBelongsToDepend extends BelongsTo
         $this->optionResolveCallback = function () {
             return [];
         };
+        $this->setResourceParentClass($parentResource);
     }
 
     public function placeholder($placeholder)
