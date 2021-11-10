@@ -4,7 +4,7 @@
             <div class="flex items-center">
                 <multiselect
                     v-model="value"
-                    :disabled="creatingViaRelatedResource || isReadonly"
+                    :disabled="creatingViaRelatedResource || isDisabled || isReadonly"
                     :options="options"
                     :placeholder="this.field.placeholder ? this.field.placeholder : this.field.indexName + ' ' + __('Select')"
                     :selectLabel="__('Press enter to select')"
@@ -94,6 +94,10 @@ export default {
 
         isReadonly() {
             return this.field.readonly || _.get(this.field, "extraAttributes.readonly");
+        },
+
+        isDisabled() {
+            return this.field.disabled || this.field.readonly || _.get(this.field, "extraAttributes.readonly");
         },
 
         canShowNewRelationModal() {

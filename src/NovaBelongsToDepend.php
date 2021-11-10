@@ -24,6 +24,8 @@ class NovaBelongsToDepend extends BelongsTo
 
     public $titleKey;
 
+    public $disabled;
+
     public $dependsOn = [];
 
     public $dependsMap = [];
@@ -93,6 +95,12 @@ class NovaBelongsToDepend extends BelongsTo
     public function fallback($fallback)
     {
         $this->fallback = $fallback;
+        return $this;
+    }
+
+    public function disabled($disabled)
+    {
+        $this->disabled = $disabled;
         return $this;
     }
 
@@ -226,6 +234,7 @@ class NovaBelongsToDepend extends BelongsTo
             'fallback' => $this->fallback,
             'showLinkToResourceFromDetail' => $this->showLinkToResourceFromDetail,
             'showLinkToResourceFromIndex' => $this->showLinkToResourceFromIndex,
+            'disabled' => $this->disabled,
         ], $this->meta);
     }
 }
