@@ -4,6 +4,7 @@
             <div class="flex items-center">
                 <multiselect
                     v-model="value"
+                    :disabled="creatingViaRelatedResource || isReadonly || isDisabled"
                     :options="options"
                     :placeholder="this.field.placeholder ? this.field.placeholder : this.field.indexName + ' ' + __('Select')"
                     :selectLabel="__('Press enter to select')"
